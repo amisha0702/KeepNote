@@ -1,0 +1,11 @@
+<hr>
+<div class="example-container">
+   <label>Title: </label><input  [(ngModel)]="title" placeholder="Title">
+    <br>
+     <label>Content: </label><input [(ngModel)]="content" placeholder="Enter your content">
+    <br>
+    <button class="add-button" [disabled]="title.length==0||content.length==0" caption="Add Note" (click)="addNote()">Add Note</button>
+</div>
+   
+    
+    
